@@ -22,4 +22,9 @@ public class Menu extends AppCompatActivity {
         startActivity(b);
 
     }
+
+    public void boton2(View view) {
+        Intent b2 = new Intent(this, boton2.class);
+        startActivity(b2);
+    }
 }
