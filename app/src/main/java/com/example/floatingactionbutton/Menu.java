@@ -18,7 +18,7 @@ public class Menu extends AppCompatActivity {
 
     public void boton1(View view) {
 
-        Intent b= new Intent(this, MainActivity.class);
+        Intent b = new Intent(this, MainActivity.class);
         startActivity(b);
 
     }
@@ -26,5 +26,10 @@ public class Menu extends AppCompatActivity {
     public void boton2(View view) {
         Intent b2 = new Intent(this, boton2.class);
         startActivity(b2);
+    }
+
+    public void boton3(View view) {
+        Intent b3 = new Intent(this, boton3animacion.class);
+        startActivity(b3);
     }
 }
