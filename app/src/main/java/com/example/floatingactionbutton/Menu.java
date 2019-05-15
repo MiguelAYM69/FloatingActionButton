@@ -32,4 +32,14 @@ public class Menu extends AppCompatActivity {
         Intent b3 = new Intent(this, boton3animacion.class);
         startActivity(b3);
     }
+
+    public void boton4(View view) {
+        Intent b4 = new Intent(this, boton4rotar.class);
+        startActivity(b4);
+    }
+
+    public void boton5(View view) {
+        Intent b5 = new Intent(this, boton5menudesplegable.class);
+        startActivity(b5);
+    }
 }
