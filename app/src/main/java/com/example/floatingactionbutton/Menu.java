@@ -42,4 +42,9 @@ public class Menu extends AppCompatActivity {
         Intent b5 = new Intent(this, boton5menudesplegable.class);
         startActivity(b5);
     }
+
+    public void boton6(View view) {
+        Intent b6 = new Intent( this, desplegable.class);
+        startActivity(b6);
+    }
 }
