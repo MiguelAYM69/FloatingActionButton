@@ -3,6 +3,7 @@ package com.example.floatingactionbutton;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.animation.AnimationUtils;
 import android.view.animation.Interpolator;
@@ -15,8 +16,11 @@ public class boton4rotar extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_boton4rotar);
 
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setImageResource(R.drawable.agregar);
+        fab.setImageResource(R.drawable.plus);
 
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -27,13 +31,13 @@ public class boton4rotar extends AppCompatActivity {
                             android.R.interpolator.fast_out_slow_in);
 
                     view.animate()
-                            .rotation(click ? 180f : 0)
+                            .rotation(click ? 45f : 0)
                             .setInterpolator(interpolador)
                             .start();
                 }
             }
         });
-
     }
+
 }
 
